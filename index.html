@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CyberSurfer Portfolio</title>
+    <style>
+      /* Add some basic styling to give the website a professional, modern look */
+      body {
+        /* Set the background image to the animated GIF */
+        background-image: url("images/gighy1.gif");
+        /* Set the background size to cover the entire element */
+        background-size: cover;
+        /* Set the background repeat to no-repeat */
+        background-repeat: no-repeat;
+      }
+
+      a {
+        color: #00ff00;
+        font-size: x-large;
+        font-style: oblique;
+        font-family: monospace;
+        text-decoration: wavy;
+      }
+
+      h2,
+      h3 {
+        color: #000000;
+        font-weight: bolder;
+        font-style: oblique;
+        font-size: 30px;
+        text-decoration: underline;
+      }
+      /* Use a dark theme for the website */
+      body {
+        background-color: rgb(0, 0, 0);
+        color: rgba(71, 184, 18, 0.603);
+        font-family: "Gill Sans", "Gill Sans MT","Trebuchet MS",
+          sans-serif;
+        font-size: large;
+        font-weight: 800;
+        text-align: justify;
+      }
+      nav,
+      main,
+      footer {
+        background-color: rgb(51, 51, 51);
+        padding: 20px;
+      }
+      section {
+        /* Set the background image to a matrix animation */
+        background-image: url("matrix-animation.gif");
+        /* Set the animation properties */
+        animation: matrix 1s linear infinite;
+      }
+
+      /* Define the matrix animation */
+      @keyframes matrix {
+        /* Set the background position to move from left to right */
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: -800px 0;
+        }
+      }
+
+      /* Add some style to the navigation links */
+      nav ul {
+        list-style: decimal-leading-zero;
+        display: flex;
+        justify-content: space-between;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        text-decoration: underline;
+        font-size: 20px;
+      }
+      /* Add some style to the footer */
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        color: rgb(255, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        animation: scroll 20s linear infinite;
+      }
+      /* Create a CSS animation to scroll the footer from right to left */
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .heading {
+        text-align: right;
+        font-size: 70px;
+        text-transform: uppercase;
+        animation: fadeinout 7s linear infinite;
+      }
+
+      @keyframes fadeinout {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">My Portfolio</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About Me (CyberSurfer)</h2>
+        <p>
+          I'm a beginner in computer programming and web development using the
+          Raspberry Pi4 and AI technology.<br />I want to learn more about what
+          I can achieve with the Raspberry Pi.
+        </p>
+  
+          <!-- Add some computer images to the about section -->
+          <img src="images/rpi41.jpg" alt="A rpi4" />
+        
+        <p>
+          I'm a computer enthusiast looking to develop skills in all things
+          Cyber. <br />
+          I'm very interested in the use of VS Code and Ai, and am curious about
+          what's going on in the industry.
+        </p>
+        <!-- Add some more computer images to the about section -->
+        <img src="images/vscode.jpg" alt="screenshot of VSCode" />
+      </section>
+      <section id="projects">
+        <h2>PROJECTS</h2>
+        <h3>Project 1</h3>
+        <p>
+          My first project is this Website, I made this with no computer courses
+          or qualifications. This was all built through ChatGPT. <br />
+          I just asked it what i wanted and it wrote out the code for me, have a
+          go yourself <a href="https://chat.openai.com/">Click Here!</a>
+        </p>
+        <h3>Project 2</h3>
+        <p>
+          My next project is now in the mix, come back in a while and see whats
+          new!
+        </p>
+        <img src="images/gpt2.jpg" alt="chat gpt" />
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>You can contact me at:</p>
+        <ul>
+          <section id="contact">
+            <p>The following email address:</p>
+            <!-- Use the a element to create a clickable email link -->
+            <p>
+              <a href="mailto:csurfer0104@gmail.com">csurfer0104@gmail.com</a>
+            </p>
+            <p>Also on these social media platforms:</p>
+            <!-- Use the a element to create clickable links to social media profiles -->
+            <ul>
+              <p><a href="https://twitter.com/@_csurfer_">Twitter</a></p>
+              <p>
+                <a href="https://www.instagram.com/in/@_travelsnapz_">Insta</a>
+              </p>
+            </ul>
+          </section>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2023 CyberSurfer ------- Happy New Year</p>
+    </footer>
+  </body>
+</html>
