@@ -31,6 +31,7 @@
         font-size: 30px;
         text-decoration: underline;
       }
+
       /* Use a dark theme for the website */
       body {
         background-color: rgb(0, 0, 0);
@@ -40,12 +41,14 @@
         font-weight: 800;
         text-align: justify;
       }
+
       nav,
       main,
       footer {
         background-color: rgb(51, 51, 51);
         padding: 20px;
       }
+
       section {
         /* Set the background image to a matrix animation */
         background-image: url("matrix-animation.gif");
@@ -59,6 +62,7 @@
         from {
           background-position: 0 0;
         }
+
         to {
           background-position: -800px 0;
         }
@@ -70,13 +74,16 @@
         display: flex;
         justify-content: space-between;
       }
+
       nav li {
         margin: 0 10px;
       }
+
       nav a {
         text-decoration: underline;
         font-size: 20px;
       }
+
       /* Add some style to the footer */
       footer {
         position: fixed;
@@ -89,15 +96,18 @@
         text-align: center;
         animation: scroll 20s linear infinite;
       }
+
       /* Create a CSS animation to scroll the footer from right to left */
       @keyframes scroll {
         0% {
           transform: translateX(100%);
         }
+
         100% {
           transform: translateX(-100%);
         }
       }
+
       .heading {
         text-align: right;
         font-size: 70px;
@@ -109,15 +119,19 @@
         0% {
           opacity: 1;
         }
+
         50% {
           opacity: 0;
         }
+
         100% {
           opacity: 1;
         }
-      }
+     }
+    
     </style>
   </head>
+
   <body>
     <header>
       <h1 class="heading">My Portfolio</h1>
@@ -154,12 +168,29 @@
         <h2>PROJECTS</h2>
         <h3>Project 1</h3>
         <p>
-          My first project is this Website <br> This website was built by me, CyberSurfer, and my trusty AI assistant. I conceptualized the design and layout, while the AI assistant helped with the coding and implementation of various features. <br> Together, we were able to create a professional and visually appealing portfolio that showcases my skills and projects. The AI assistant was particularly helpful in providing guidance on best practices and ensuring that the website was optimized for both desktop and mobile devices. <br> Overall, it was a great learning experience for both of us and we are proud of the end result. Have a
-          go yourself <a href="https://chat.openai.com/">Click Here!</a>
+          My first project is this Website <br />
+          This website was built by me, CyberSurfer, and my trusty AI assistant.
+          I conceptualized the design and layout, while the AI assistant helped
+          with the coding and implementation of various features. <br />
+          Together, we were able to create a professional and visually appealing
+          portfolio that showcases my skills and projects. The AI assistant was
+          particularly helpful in providing guidance on best practices and
+          ensuring that the website was optimized for both desktop and mobile
+          devices. <br />
+          Overall, it was a great learning experience for both of us and we are
+          proud of the end result. Have a go yourself
+          <a href="https://chat.openai.com/">Click Here!</a>
         </p>
         <h3>Project 2</h3>
         <p>
-          There are so many exciting projects that we could work on next! Some ideas might include building a mobile app, creating a virtual reality experience, or developing a machine learning model. <br> We could also consider building a custom website for a business or organization, or creating an online course or tutorial. <br> Whatever project we choose, it will be a great opportunity to learn new skills and technologies, and to create something truly unique and impactful.
+          There are so many exciting projects that we could work on next! Some
+          ideas might include building a mobile app, creating a virtual reality
+          experience, or developing a machine learning model. <br />
+          We could also consider building a custom website for a business or
+          organization, or creating an online course or tutorial. <br />
+          Whatever project we choose, it will be a great opportunity to learn
+          new skills and technologies, and to create something truly unique and
+          impactful.
         </p>
         <video width="320" height="240" controls autoplay loop>
           <source src="videos/surf8.mp4" type="video/mp4" />
@@ -170,6 +201,20 @@
           Your browser does not support the video tag.
         </video>
       </section>
+      <section id="photography">
+        <h2>Photography Portfolio</h2>
+        <figure>
+          <img
+            src="images/sland1.png"
+            alt="A beautiful landscape on the East Coast of Scotland"
+          />
+          <figcaption>A beautiful landscape on the East Coast of Scotland</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gglow.png" alt="glasgow at night" />
+          <figcaption>Glasgow at night</figcaption>
+        </figure>
+        
       <section id="contact">
         <h2>Contact</h2>
         <p>You can contact me at:</p>
@@ -193,7 +238,7 @@
       </section>
     </main>
     <footer>
-      <p> - - - - - Copyright 2023 CyberSurfer - - - - - </p>
+      <p>- - - - - Copyright 2023 CyberSurfer - - - - -</p>
     </footer>
   </body>
 </html>
