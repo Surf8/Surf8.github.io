@@ -84,6 +84,33 @@
         font-size: 20px;
       }
 
+      #photography {
+        /* Use a dark background color */
+        background-color: #333;
+        color: #00ff00;
+      }
+
+      #photography .photography-container {
+        /* Add a border and padding around the images and captions */
+        border: 5px solid #00ff00;
+        padding: 20px;
+      }
+
+      #photography img {
+        /* Add a border around the images */
+        border: 2px solid #00ff00;
+        /* Use object-fit to scale the images to fit within their container */
+        object-fit: cover;
+        max-width: 300px;
+        max-height: 200px;
+      }
+
+      #photography figcaption {
+        /* Use a lime green text color for the captions */
+        color: #00ff00;
+        font-style: italic;
+      }
+
       /* Add some style to the footer */
       footer {
         position: fixed;
@@ -127,8 +154,7 @@
         100% {
           opacity: 1;
         }
-     }
-    
+      }
     </style>
   </head>
 
@@ -201,20 +227,26 @@
           Your browser does not support the video tag.
         </video>
       </section>
+
       <section id="photography">
         <h2>Photography Portfolio</h2>
-        <figure>
-          <img
-            src="images/sland1.png"
-            alt="A beautiful landscape on the East Coast of Scotland"
-          />
-          <figcaption>A beautiful landscape on the East Coast of Scotland</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gglow.png" alt="glasgow at night" />
-          <figcaption>Glasgow at night</figcaption>
-        </figure>
-        
+        <div class="photography-container">
+          <figure>
+            <img
+              src="images/sland1.png"
+              alt="A beautiful landscape on the East Coast of Scotland"
+            />
+            <figcaption>
+              A beautiful landscape on the East Coast of Scotland
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/gglow.png" alt="glasgow at night" />
+            <figcaption>Glasgow at night</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section id="contact">
         <h2>Contact</h2>
         <p>You can contact me at:</p>
