@@ -109,8 +109,8 @@ footer {
   text-align: center;
   text-shadow: -14px 5px 23px #00FF32;
   font-size: 70px;
-  text-decoration: overline dotted rgba(31, 255, 0, 0.58);
-  text-transform: capitalize;
+  text-decoration: overline dashed rgba(31, 255, 0, 0.58);
+  text-transform: uppercase;
   animation: fadeinout 3s linear infinite;
 }
 
