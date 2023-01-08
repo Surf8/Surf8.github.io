@@ -61,30 +61,26 @@ nav a {
 }
 
 #photography .photography-container {
-  /* Add a border and padding around the images and captions */
   border: 2px dotted #000000;
   padding: 0px;
   display: inline-flex;
 }
 
 #photography img {
-  /* Add a border around the images */
-  border: 5px dotted #000000;
-  border-radius: 68px;
+  border: 5px dotted #c46e0c;
+  border-radius: 30px;
   object-fit: cover;
-  max-width: 500px;
-  max-height: 200px;
+  max-width: 350px;
+  max-height: 150px;
+
 }
 
 #photography figcaption {
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  line-height: 1;
   color: #00ff00;
-  font-style: italic;
+  font-style: normal;
+  font-size: x-small;
 }
 
-/* Add some style to the footer */
 footer {
   padding-top: 30px;
   bottom: 0;
