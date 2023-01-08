@@ -106,7 +106,7 @@ footer {
 
 .heading {
   font-family: 'Inconsolata', monospace;
-  text-align: right;
+  text-align: center;
   text-shadow: -14px 5px 23px #00FF32;
   font-size: 70px;
   text-decoration: overline dotted rgba(31, 255, 0, 0.58);
