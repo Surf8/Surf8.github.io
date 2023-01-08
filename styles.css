@@ -63,21 +63,23 @@ nav a {
 #photography .photography-container {
   /* Add a border and padding around the images and captions */
   border: 2px dotted #000000;
-  padding: 20px;
-  display: flex;
+  padding: 0px;
+  display: inline-flex;
 }
 
 #photography img {
   /* Add a border around the images */
   border: 5px dotted #000000;
-  /* Use object-fit to scale the images to fit within their container */
+  border-radius: 68px;
   object-fit: cover;
   max-width: 500px;
   max-height: 200px;
 }
 
 #photography figcaption {
-  /* Use a lime green text color for the captions */
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1;
   color: #00ff00;
   font-style: italic;
 }
@@ -107,11 +109,12 @@ footer {
 }
 
 .heading {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inconsolata', monospace;
   text-align: right;
   text-shadow: -14px 5px 23px #00FF32;
   font-size: 70px;
-  text-transform: uppercase;
+  text-decoration: overline dotted rgba(31, 255, 0, 0.58);
+  text-transform: capitalize;
   animation: fadeinout 3s linear infinite;
 }
 
