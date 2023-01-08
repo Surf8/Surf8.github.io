@@ -105,13 +105,14 @@ footer {
 }
 
 .heading {
+  color: #000000;
   font-family: 'Inconsolata', monospace;
   text-align: center;
   text-shadow: -14px 5px 23px #00FF32;
   font-size: 70px;
-  text-decoration: overline dashed rgba(31, 255, 0, 0.58);
+  text-decoration: underline rgba(0, 0, 0, 0.637);
   text-transform: uppercase;
-  animation: fadeinout 3s linear infinite;
+  animation: fadeinout 5s linear infinite;
 }
 
 @keyframes fadeinout {
