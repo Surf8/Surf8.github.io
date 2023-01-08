@@ -6,7 +6,7 @@ a {
   color: #000000;
   font-size: xx-large;
   font-style: oblique;
-  font-family: monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2,
@@ -20,7 +20,7 @@ h3 {
 
 /* Use a dark theme for the website */
 body {
-  color: rgb(0, 0, 0);
+  color: rgb(189, 164, 164);
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   font-size: large;
   font-weight: 800;
@@ -107,22 +107,24 @@ footer {
 }
 
 .heading {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: right;
+  text-shadow: -14px 5px 23px #00FF32;
   font-size: 70px;
   text-transform: uppercase;
-  animation: fadeinout 7s linear infinite;
+  animation: fadeinout 3s linear infinite;
 }
 
 @keyframes fadeinout {
-  0% {
+  100% {
     opacity: 1;
   }
 
-  80% {
+  20% {
     opacity: 0;
   }
 
-  60% {
+  40% {
     opacity: 1;
   }
 }
