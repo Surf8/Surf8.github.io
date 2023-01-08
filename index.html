@@ -2,24 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>CyberSurfer Portfolio</title>
     <style>
       /* Add some basic styling to give the website a professional, modern look */
       body {
         /* Set the background image to the animated GIF */
-        background-image: url("images/gighy1.gif");
-        /* Set the background size to cover the entire element */
-        background-size: cover;
-        /* Set the background repeat to no-repeat */
-        background-repeat: round;
+        background-image: url("images/bkgrnd.png");
+        background-size: auto;
       }
 
       a {
-        color: #0ddd0d;
+        color: #000000;
         font-size: xx-large;
         font-style: oblique;
         font-family: monospace;
@@ -27,7 +24,7 @@
 
       h2,
       h3 {
-        color: #000000;
+        color: #4fc916;
         font-weight: bolder;
         font-style: oblique;
         font-size: 30px;
@@ -37,7 +34,6 @@
       /* Use a dark theme for the website */
       body {
         background-color: rgb(0, 0, 0);
-        color: rgba(71, 184, 18, 0.603);
         font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
         font-size: large;
         font-weight: 800;
@@ -45,31 +41,13 @@
       }
 
       nav,
-      main,
-      footer {
-        background-color: rgb(51, 51, 51);
+      main {
+        background-color: rgba(51, 51, 51, 0.719);
         padding: 20px;
+        border: 2px dotted rgb(0, 0, 0);
+        border-radius: 12px;
+        padding: 5px;
       }
-
-      section {
-        /* Set the background image to a matrix animation */
-        background-image: url("matrix-animation.gif");
-        /* Set the animation properties */
-        animation: matrix 1s linear infinite;
-      }
-
-      /* Define the matrix animation */
-      @keyframes matrix {
-        /* Set the background position to move from left to right */
-        from {
-          background-position: 0 0;
-        }
-
-        to {
-          background-position: -800px 0;
-        }
-      }
-
       /* Add some style to the navigation links */
       nav ul {
         list-style: decimal-leading-zero;
@@ -121,7 +99,7 @@
         left: 0;
         width: 40%;
         background-color: transparent;
-        color: rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
         font-size: 25px;
         text-align: center;
         animation: scroll 20s linear infinite;
@@ -133,7 +111,7 @@
           transform: translateX(100%);
         }
 
-        20% {
+        140% {
           transform: translateX(-100%);
         }
       }
