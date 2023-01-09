@@ -40,7 +40,6 @@ main {
   border: 6px dotted rgba(66, 199, 25, 0.712);
 }
 
-/* Add some style to the navigation links */
 nav ul {
   list-style: decimal-leading-zero;
   display: flex;
@@ -88,7 +87,6 @@ footer {
   animation: scroll 20s linear infinite;
 }
 
-/* Create a CSS animation to scroll the footer from right to left */
 @keyframes scroll {
   20% {
     transform: translateX(100%);
