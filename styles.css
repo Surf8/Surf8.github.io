@@ -10,7 +10,7 @@ body {
   font-size: large;
   font-weight: 800;
   text-align: justify;
-  color: aliceblue;
+  color: rgb(173, 184, 194);
 }
 
 a {
@@ -32,13 +32,12 @@ nav {
   background-color: linear-gradient(90deg, #2c128e 0%, #b31111 100%);
   border-radius: 65px;
   padding: 5px;
-  border: 6px dotted rgb(0, 0, 0);
 }
 main {
   background-color: linear-gradient(90deg, #2c128e 0%, #b31111 100%);
   padding: 20px;
   border-radius: 0px 0px 100px 100px;
-  border: 6px dotted rgb(0, 0, 0);
+  border: 6px dotted rgba(66, 199, 25, 0.712);
 }
 
 /* Add some style to the navigation links */
