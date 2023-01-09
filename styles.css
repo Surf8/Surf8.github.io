@@ -1,5 +1,10 @@
 body {
   background: linear-gradient(90deg, #2c128e 0%, #b31111 100%);
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: 800;
+  text-align: justify;
+  color: aliceblue;
 }
 
 a {
@@ -16,15 +21,6 @@ h3 {
   font-style: oblique;
   font-size: 30px;
   text-decoration: underline;
-}
-
-/* Use a dark theme for the website */
-body {
-  color: rgb(189, 164, 164);
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  font-size: large;
-  font-weight: 800;
-  text-align: justify;
 }
 
 nav {
@@ -76,7 +72,7 @@ nav a {
 }
 
 #photography figcaption {
-  color: #00ff00;
+  color: aliceblue;
   font-style: normal;
   font-size: x-small;
 }
@@ -87,7 +83,7 @@ footer {
   left: 0;
   width: 40%;
   background-color: transparent;
-  color: rgb(0, 0, 0);
+  color: aliceblue;
   font-size: 25px;
   text-align: center;
   animation: scroll 20s linear infinite;
@@ -112,7 +108,7 @@ footer {
   font-size: 70px;
   text-decoration: underline rgba(0, 0, 0, 0.637);
   text-transform: uppercase;
-  animation: fadeinout 5s linear infinite;
+  animation: fadeinout 7s linear infinite;
 }
 
 @keyframes fadeinout {
