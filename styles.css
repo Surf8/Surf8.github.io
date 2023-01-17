@@ -122,12 +122,8 @@ footer {
 }
 
 .head2 {
-  color: #000000;
+  max-width: 100%;
+  height: auto;
   text-align: center;
-  text-shadow: -14px 5px 23px #00ff32;
-  font-size: 70px;
-  text-decoration: underline rgba(0, 0, 0, 0.637);
-  text-transform: uppercase;
-  animation: fadeinout 7s linear infinite;
 
 }
