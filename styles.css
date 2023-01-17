@@ -62,7 +62,7 @@ nav a {
 }
 
 #photography img {
-  border: 5px dotted #0000006b;
+  border: 5px dotted #3cff0093;
   border-radius: 30px;
   object-fit: cover;
   max-width: 350px;
@@ -119,11 +119,4 @@ footer {
   40% {
     opacity: 1;
   }
-}
-
-.head2 {
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-
 }
