@@ -6,15 +6,13 @@
 
 body {
   background: linear-gradient(90deg, #2c128e 0%, #b31111 100%);
-  font-size: large;
-  font-weight: 800;
+  font-size: 30px;
   text-align: justify;
   color: aliceblue;
 }
 
 a {
   color: #000000;
-  font-size: xx-large;
   font-style: oblique;
 }
 
@@ -40,7 +38,7 @@ main {
 }
 
 nav ul {
-  list-style: decimal-leading-zero;
+  list-style: circle;
   display: flex;
   justify-content: space-between;
 }
@@ -104,6 +102,14 @@ footer {
   text-decoration: underline rgba(0, 0, 0, 0.637);
   text-transform: uppercase;
   animation: fadeinout 7s linear infinite;
+}
+.songs {
+   font-weight:400;
+   font-size: x-large;
+   font-style: italic;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+   text-align:center;
+
 }
 
 @keyframes fadeinout {
