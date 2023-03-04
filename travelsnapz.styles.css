@@ -1,8 +1,6 @@
 body {
   background: linear-gradient(90deg, #2600b1 0%, #b31111 100%);
-  font-size: large;
-  font-weight: 800;
-  text-align: justify;
+  text-align:center;
 }
 
 .title-1 {
@@ -16,72 +14,73 @@ body {
 
 .box-1 {
   display: grid;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  font-weight: bold;
+  font-weight: lighter;
   color: aliceblue;
 }
+
 .box-2 {
   display: grid;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  font-weight: bold;
+  font-weight: lighter;
   color: aliceblue;
 }
 .box-3 {
   display: grid;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  font-weight: bold;
+  font-weight: lighter;
   color: aliceblue;
 }
 .box-4 {
   display: grid;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  font-weight: bold;
+  font-weight: lighter;
   color: aliceblue;
 }
 .box-5 {
   display: grid;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  font-weight: bold;
+  font-weight: lighter;
   color: aliceblue;
 }
 
 .box-6 {
   display: grid;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  font-weight: bold;
+  font-weight: lighter;
   color: aliceblue;
 }
 .box-7 {
   display:grid;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 50px;
   margin-inline-end: 50px;
-  font-weight: bold;
+  font-weight: lighter;
   color: aliceblue;
 }
