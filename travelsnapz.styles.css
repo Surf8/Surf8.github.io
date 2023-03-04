@@ -1,0 +1,87 @@
+body {
+  background: linear-gradient(90deg, #2600b1 0%, #b31111 100%);
+  font-size: large;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.title-1 {
+  padding: 20px 50px;
+  font-size: 50px;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+}
+
+.box-1 {
+  display: grid;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.box-2 {
+  display: grid;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.box-3 {
+  display: grid;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.box-4 {
+  display: grid;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.box-5 {
+  display: grid;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.box-6 {
+  display: grid;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.box-7 {
+  display:grid;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
