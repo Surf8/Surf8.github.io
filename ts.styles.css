@@ -6,18 +6,6 @@
   font-family: "Inconsolata", monospace;
   font-size: large;
 }
-.banner {
-  position:absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 300px;
-  background-image: url("images/dkrban.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 body {
   display: flex;
@@ -42,7 +30,7 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
-  margin-top: 60%;
+  margin-top: 20%;
 }
 
 .container .card {
