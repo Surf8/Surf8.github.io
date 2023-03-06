@@ -3,6 +3,7 @@ body {
   text-align:center;
 }
 
+
 .title-1 {
   padding: 20px 50px;
   font-size: 50px;
@@ -11,6 +12,7 @@ body {
   text-decoration: underline;
   color: black;
 }
+
 
 .box-1 {
   display: grid;
@@ -21,6 +23,11 @@ body {
   margin-inline-end: 50px;
   font-weight: lighter;
   color: aliceblue;
+}
+.box-1 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(255, 238, 0, 0.836);
 }
 
 .box-2 {
@@ -33,6 +40,11 @@ body {
   font-weight: lighter;
   color: aliceblue;
 }
+.box-2 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(94, 255, 0, 0.637);
+}
 .box-3 {
   display: grid;
   font-size: 30px;
@@ -42,6 +54,11 @@ body {
   margin-inline-end: 50px;
   font-weight: lighter;
   color: aliceblue;
+}
+.box-3 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(255, 238, 0, 0.836);
 }
 .box-4 {
   display: grid;
@@ -53,6 +70,11 @@ body {
   font-weight: lighter;
   color: aliceblue;
 }
+.box-4 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(94, 255, 0, 0.637);
+}
 .box-5 {
   display: grid;
   font-size: 30px;
@@ -62,6 +84,11 @@ body {
   margin-inline-end: 50px;
   font-weight: lighter;
   color: aliceblue;
+}
+.box-5 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(255, 238, 0, 0.836);
 }
 
 .box-6 {
@@ -74,6 +101,11 @@ body {
   font-weight: lighter;
   color: aliceblue;
 }
+.box-6 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(94, 255, 0, 0.637);
+}
 .box-7 {
   display:grid;
   font-size: 30px;
@@ -83,6 +115,56 @@ body {
   margin-inline-end: 50px;
   font-weight: lighter;
   color: aliceblue;
+}
+.box-7 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(255, 238, 0, 0.836);
+}
+.box-8 {
+  display:grid;
+  font-size: 30px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: lighter;
+  color: aliceblue;
+}
+.box-8 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(94, 255, 0, 0.637);
+}
+.box-9 {
+  display:grid;
+  font-size: 30px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: lighter;
+  color: aliceblue;
+}
+.box-9 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(255, 238, 0, 0.836);
+}
+.box-10 {
+  display:grid;
+  font-size: 30px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  font-weight: lighter;
+  color: aliceblue;
+}
+.box-10 h2{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: rgba(94, 255, 0, 0.637);
 }
 footer {
 font-size: xx-large;
