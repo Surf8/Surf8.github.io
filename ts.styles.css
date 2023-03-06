@@ -6,17 +6,32 @@
   font-family: "Inconsolata", monospace;
   font-size: large;
 }
+.banner {
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-image: url("images/dkrban.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 body {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(rgba(234, 238, 0, 0.37),rgba(19, 0, 194, 0.425));
+  background-image: linear-gradient(
+    rgba(150, 173, 221, 0.479),
+    rgba(19, 0, 194, 0.534)
+  );
 }
 
-h2{
-    font-size: xx-large;
-    font-style: oblique;
-    text-decoration: underline;
+h2 {
+  font-size: xx-large;
+  font-style: oblique;
+  text-decoration: underline;
 }
 
 .container {
@@ -27,7 +42,7 @@ h2{
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
-  margin-top: 8%;
+  margin-top: 60%;
 }
 
 .container .card {
@@ -43,18 +58,18 @@ h2{
   transition: 0.3s ease-in-out;
   margin-top: 5%;
 }
-.container .card .imgBx{
-    position: relative;
-    width: 260px;
-    height: 3260px;
-    top: -60px;
-    left: 20px;
-    box-shadow: 0 5px 20px rgba (0,0,01.2);
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 3260px;
+  top: -60px;
+  left: 20px;
+  box-shadow: 0 5px 20px rgba (0, 0, 01.2);
 }
 .container .card .imgBx img {
-    max-width: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  border-radius: 10px;
 }
-.imgBx:hover img{
-    transform: scale(1.3);
+.imgBx:hover img {
+  transform: scale(1.3);
 }
