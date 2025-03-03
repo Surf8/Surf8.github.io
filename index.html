@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
     <title>DKR - Travelsnapz</title>
-  </head>
-
-  <body>
+</head>
+<body>
     <header>
-      <h1 class="heading">DKR Portfolio</h1>
+        <h1 class="heading">DKR Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="travelsnapz.html">Travelsnapz</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#solardata">Solar Data</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="travelsnapz.html">Travelsnapz</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#solardata">Solar Data</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
     <main>
       <section id="about">
         <h2>About Me</h2>
@@ -35,7 +35,7 @@
         <!-- Add some computer images to the about section -->
         <img
           src="http://images.ifun.de/wp-content/uploads/2015/02/raspberry-pi-2-500.jpg"
-          alt="RaspberryPi4"
+          alt="A rpi4"
         />
         <p>
           <a href="https://www.raspberrypi.com/"
@@ -91,47 +91,26 @@
         </p>
       </section>
 
-      <section id="solardata">
-        <div class="banner">
-          <h2>Solar Data</h2>
-          <a
-            href="https://www.hamqsl.com/solar.html"
-            title="Click to add Solar-Terrestrial Data to your website!"
-          >
-            <img src="https://www.hamqsl.com/solarsun.php" />
-          </a>
-        </div>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>You can contact me at:</p>
-        <ul>
-          <section id="contact">
-            <p>
-              <a href="mailto:csurfer0104@gmail.com">Click > My E-Mail</a>
-            </p>
-            <p>Also on these social media platforms:</p>
-            <ul>
-              <p>
-                <a
-                  href="https://instagram.com/__travelsnapz__?igshid=ZDdkNTZiNTM"
-                  >Instagram - @__travelsnapz__</a
-                >
-              </p>
+        <section id="solardata" class="card">
+            <h2>Solar Data</h2>
+            <a href="https://www.hamqsl.com/solar.html" title="Add Solar-Terrestrial Data to your website!">
+                <img src="https://www.hamqsl.com/solarsun.php" alt="Solar Data">
+            </a>
+        </section>
 
-              <p>
-                <a
-                  href="https://www.youtube.com/channel/UC-6z58oq0qK2kDxBPn2XOFg"
-                  >YouTube for fun - @CrazyDave</a
-                >
-              </p>
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:csurfer0104@gmail.com">csurfer0104@gmail.com</a></p>
+            <p>Social Media:</p>
+            <ul class="social-links">
+                <li><a href="https://instagram.com/__travelsnapz__?igshid=ZDdkNTZiNTM">Instagram - @__travelsnapz__</a></li>
+                <li><a href="https://www.youtube.com/channel/UC-6z58oq0qK2kDxBPn2XOFg">YouTube - @CrazyDave</a></li>
             </ul>
-          </section>
-        </ul>
-      </section>
+        </section>
     </main>
     <footer>
-      <p>- &copy; 2024 DKR -</p>
+      <p>- Copyright 2024 DKR -</p>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
