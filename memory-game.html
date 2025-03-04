@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom right, #add8e6, #ffcc99); /* Light blue to light orange gradient */
+        }
+        h1 {
+            color: #333;
+        }
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            gap: 10px;
+            margin: 20px;
+        }
+        .card {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+        .card.flipped {
+            background-color: #2ecc71;
+            transform: scale(1.05);
+        }
+        .card.matched {
+            background-color: #e74c3c;
+            cursor: default;
+        }
+        #score, #high-score {
+            font-size: 18px;
+            margin: 10px;
+        }
+        #reset-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #reset-btn:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <h1>Memory Match Game</h1>
+    <h2>Click 2 cards at a time to find matching pairs</h2>
+    <h3>Try to match all pairs with the fewest attempts</h3>
+    <div id="score">Score: <span id="score-value">0</span></div>
+    <div id="high-score">Highest Score To Beat: <span id="high-score-value">0</span> 😂🏆</div>
+    <div id="game-board"></div>
+    <button id="reset-btn">Reset Game</button>
+    <h4>Notes.
+        If you ever want to reset the high score manually, open your browser’s developer tools (F12), go to the Console tab, and type:
+        localStorage.clear();
+        Then press Enter to clear the high score from local storage.
+        
+        </h4>
+
+    <script>
+        const gameBoard = document.getElementById('game-board');
+        const scoreValue = document.getElementById('score-value');
+        const highScoreValue = document.getElementById('high-score-value');
+        const resetBtn = document.getElementById('reset-btn');
+        let cards = [];
+        let flippedCards = [];
+        let score = 0;
+        let highScore = localStorage.getItem('highScore') ? parseInt(localStorage.getItem('highScore')) : 0;
+
+        // Display initial high score
+        highScoreValue.textContent = highScore;
+
+        // Card content (duplicate each for pairs)
+        const cardContents = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+        const allCards = [...cardContents, ...cardContents];
+
+        // Shuffle array
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Update high score
+        function updateHighScore() {
+            if (score > highScore) {
+                highScore = score;
+                highScoreValue.textContent = highScore;
+                localStorage.setItem('highScore', highScore);
+            }
+        }
+
+        // Initialize game
+        function initGame() {
+            gameBoard.innerHTML = '';
+            cards = [];
+            flippedCards = [];
+            score = 0;
+            scoreValue.textContent = score;
+
+            const shuffledCards = shuffle([...allCards]);
+            shuffledCards.forEach(content => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.dataset.content = content;
+                card.textContent = '?';
+                card.addEventListener('click', flipCard);
+                gameBoard.appendChild(card);
+                cards.push(card);
+            });
+        }
+
+        // Flip card logic
+        function flipCard() {
+            if (flippedCards.length < 2 && !this.classList.contains('flipped') && !this.classList.contains('matched')) {
+                this.classList.add('flipped');
+                this.textContent = this.dataset.content;
+                flippedCards.push(this);
+
+                if (flippedCards.length === 2) {
+                    checkMatch();
+                }
+            }
+        }
+
+        // Check for match
+        function checkMatch() {
+            const [card1, card2] = flippedCards;
+            if (card1.dataset.content === card2.dataset.content) {
+                card1.classList.add('matched');
+                card2.classList.add('matched');
+                score += 10;
+                scoreValue.textContent = score;
+                updateHighScore(); // Check high score after each match
+                flippedCards = [];
+            } else {
+                setTimeout(() => {
+                    card1.classList.remove('flipped');
+                    card2.classList.remove('flipped');
+                    card1.textContent = '?';
+                    card2.textContent = '?';
+                    flippedCards = [];
+                }, 1000);
+            }
+        }
+
+        // Reset game
+        resetBtn.addEventListener('click', initGame);
+
+        // Start game on load
+        initGame();
+    </script>
+</body>
+</html>
