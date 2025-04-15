@@ -13,7 +13,25 @@
             background: linear-gradient(to bottom right, #add8e6, #ffcc99); /* Light blue to light orange gradient */
         }
         h1 {
-            color: #333;
+            color: #2c3e50;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #16a085;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        h4 {
+            color: #8e44ad;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
         }
         #game-board {
             display: grid;
@@ -32,7 +50,7 @@
             color: white;
             cursor: pointer;
             transform: scale(1);
-            transition: transform 0.3s;
+            transition: transform 0.3s, background-color 0.3s;
         }
         .card.flipped {
             background-color: #2ecc71;
@@ -53,6 +71,8 @@
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
         #reset-btn:hover {
             background-color: #d35400;
