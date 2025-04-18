@@ -8,118 +8,114 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
-  <title>DKR - Travelsnapz</title>
+  <title>DKR - travelsnapz</title>
+  <style>
+    body.light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header, footer {
+      background-color: inherit;
+    }
+
+    .btn-outline-light {
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  </style>
 </head>
 
-<body>
-  <header>
+<body class="light-mode">
+  <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
     <h1 class="heading">DKR Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="travelsnapz.html">Travelsnapz</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#solardata">Solar Data</a></li>
-        <li><a href="memory-game.html">Memory Game</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <button id="darkModeToggle" class="btn btn-outline-light">Toggle Dark Mode</button>
   </header>
-  <main>
-    <section id="about">
+  <main class="container mt-4">
+    <section id="about" class="mb-5">
       <h2>About Me</h2>
       <p>
-        I am a passionate amateur photographer and computer enthusiast, dedicated to exploring the intersection of
-        visual art and technology.<br />
-        With a keen interest in programming and AI, I am constantly learning and experimenting with new tools and
-        techniques.<br />
-        My journey with the Raspberry Pi has opened up exciting opportunities to innovate and create unique
-        projects.<br />
-        I am committed to developing my skills in cybersecurity and web development, using platforms like Kali Linux and
-        VS Code to stay at the forefront of the industry.
+        I am a hobbyist with a deep passion for computing and technology.<br />
+        I enjoy exploring programming, experimenting with AI, and tinkering with tools like the Raspberry Pi.<br />
+        My interests also include web development and cybersecurity, where I love learning and trying out new ideas.<br />
+        For me, it's all about the joy of discovery and the endless possibilities that technology offers.
       </p>
-
-      <!-- Add some computer images to the about section -->
-      <img src="images/rpi51.jpg" alt="A Raspberry Pi 5" style="width: 300px; height: auto;" />
-      <img src="images/hq720.jpg" alt="networkchuck" style="width: 300px; height: 200px;" />
-      <p>
-        This is NetworkChuck, great to follow along to and learn some skills,<br> but if you don't like coffee there
-        might be an issue 😂 ☕
-        <a href="https://www.youtube.com/c/NetworkChuck">Check out his YouTube channel!</a>
-      </p>
-      <p>
-        <a href="https://www.raspberrypi.com/"><img src="images/rpi4.png" /> Click for a RaspberryPi</a>
-      </p>
-
-      <p>
-        I'm looking to develop skills in all things Cyber, including security
-        and web development. I have a Kali Linux setup for security learning
-        and I have the RaspberryPi Desktop for web development.
-        <br />
-        I'm using VS Code as my workspace and curious about what's going on in
-        the industry.
-      </p>
-      <!-- Add some more computer images to the about section -->
-      <img
-        src="https://preview.redd.it/w6dhwl82k2b31.png?width=755&format=png&auto=webp&s=7860e53872b2354bc73f2286fd8850af631334d1"
-        alt="screenshot of VSCode" />
-      <p>
-        <a href="https://code.visualstudio.com/"><img src="images/vs1.png" /> Click to download VSCode</a>
-      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/rpi51.jpg" alt="A Raspberry Pi 5" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-4">
+          <img src="images/hq720.jpg" alt="networkchuck" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.youtube.com/c/NetworkChuck" class="btn btn-primary mt-3">Check out NetworkChuck's YouTube</a>
+        </div>
+      </div>
     </section>
-    <section id="projects">
-      <h2>PROJECTS</h2>
-      <h3>Project 1</h3>
-      <p>
-        This website was built by me and my trusty AI assistant. I
-        conceptualized the design and layout, while the AI assistant helped
-        with the coding and implementation of various features. <br />
-        Together, we were able to create a professional and visually appealing
-        portfolio that showcases my skills and projects. The AI assistant was
-        particularly helpful in providing guidance on best practices and
-        ensuring that the website was optimized for both desktop and mobile
-        devices. <br />
-        Overall, it was a great learning experience for both of us and we are
-        proud of the end result. Have a go yourself.
-        <a href="https://chat.openai.com/">Click Here!</a>
-      </p>
-      <h3>Project 2</h3>
-      <p>
-        There are so many exciting projects that we could work on next! An
-        idea might include building a mobile app!<br />
-        We could also consider building a custom website for a business or
-        organization, or creating an online course or tutorial. <br />
-        Whatever project we choose, it will be a great opportunity to learn
-        new skills and technologies, and to create something truly unique and
-        impactful.
-      </p>
+    <section id="projects" class="mb-5">
+      <h2>Projects</h2>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3 class="card-title">Project 1</h3>
+          <p class="card-text">
+            This website was built by me and my trusty AI assistant. I conceptualized the design and layout, while the AI assistant helped
+            with the coding and implementation of various features.
+          </p>
+          <a href="https://chat.openai.com/" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Project 2</h3>
+          <p class="card-text">
+            There are so many exciting projects that we could work on next! An idea might include building a mobile app!
+          </p>
+        </div>
+      </div>
     </section>
-
-    <section id="solardata" class="card">
+    <section id="solardata" class="mb-5">
       <h2>Solar Data</h2>
       <a href="https://www.hamqsl.com/solar.html" title="Add Solar-Terrestrial Data to your website!">
-        <img src="https://www.hamqsl.com/solarsun.php" alt="Solar Data">
+        <img src="https://www.hamqsl.com/solarsun.php" alt="Solar Data" class="img-fluid">
       </a>
     </section>
-
-    <section id="contact" class="card">
+    <section id="contact" class="mb-5">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:csurfer0104@gmail.com">csurfer0104@gmail.com</a></p>
       <p>Social Media:</p>
-      <ul class="social-links">
-        <li><a href="https://instagram.com/__travelsnapz__?igshid=ZDdkNTZiNTM">Instagram - @travelsnapz</a></li>
-        <li><a href="http://www.youtube.com/@DKR-PHOTO">YouTube - @dkr-photo</a></li>
+      <ul class="list-unstyled">
+        <li><a href="https://instagram.com/__travelsnapz__?igshid=ZDdkNTZiNTM" class="text-decoration-none">Instagram - @travelsnapz</a></li>
+        <li><a href="http://www.youtube.com/@DKR-PHOTO" class="text-decoration-none">YouTube - @dkr-photo</a></li>
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="bg-dark text-white text-center py-3">
     <p>- Copyright <span id="year"></span> DKR -</p>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode');
+      toggleButton.textContent = body.classList.contains('dark-mode') ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+    });
   </script>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
